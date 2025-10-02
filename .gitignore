@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+data/*.csv
+data/*.zip
+
+# Python
+__pycache__/
+*.pyc
+
+
