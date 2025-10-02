@@ -1,25 +1,23 @@
-🎶 Music Genre Classification (GTZAN Dataset)
-📌 Overview
 
-This project predicts the genre of a song using precomputed audio features from the GTZAN dataset
-.
+Music Genre Classification Using GTZAN Dataset
+
+Overview
+
+This project predicts the genre of a song using precomputed audio features from the GTZAN dataset.
+
 It applies machine learning techniques to classify songs into genres and visualize their feature clusters.
 
-📂 Dataset
+Dataset
 
 File used: features_30_sec.csv
 
 Features include:
 
-Chroma, RMS, Spectral centroid, Bandwidth, Rolloff
-
-Zero-crossing rate, Tempo
-
-MFCCs (20 coefficients, mean + variance)
+Chroma, RMS, Spectral centroid, Bandwidth, Rolloff Zero-crossing rate, Tempo MFCCs (20 coefficients, mean + variance)
 
 Label: label (genre of the song)
 
-⚙️ Project Workflow
+Project Workflow
 
 Data Preprocessing
 
@@ -45,15 +43,15 @@ PCA visualization of genre clusters
 
 Similarity-based song recommendations using cosine similarity
 
-📊 Results
+Results/Findings
 
 Random Forest achieved high accuracy on test data
 
-Confusion matrix reveals which genres are hardest to distinguish
+Confusion matrix reveals which genres are most difficult to distinguish
 
 PCA visualization shows how genres cluster by audio features
 
-🔍 Example Outputs
+Example Outputs
 
 Confusion Matrix Heatmap
 
@@ -61,7 +59,7 @@ PCA plot of genres
 
 Most similar songs (recommendation system)
 
-🚀 Future Improvements
+Future Improvements
 
 Experiment with different models (SVM, Gradient Boosting, Neural Nets)
 
@@ -69,13 +67,13 @@ Extend to deep learning (CNN on raw audio spectrograms)
 
 Build an interactive recommendation system
 
-💻 Technologies Used
+Technologies Used
 
 Python (pandas, numpy, scikit-learn, seaborn, matplotlib)
 
 Jupyter Notebook
 
-📁 How to Run
+How to Run:
 
 Clone/download this repo
 
@@ -83,6 +81,9 @@ Place features_30_sec.csv in the data/ folder
 
 Open the Jupyter Notebook
 
-Run all cells to train the model and see results
+Run all cells to train the model and view results
 
-✨ Author: Jaidyn Moodley
+Author: Jaidyn Moodley
+
+
+
