@@ -6,7 +6,7 @@ This project predicts the genre of a song using precomputed audio features from 
 
 ### Dataset:
 
-features_30_sec: a pre-extracted features file of the GTZAN dataset, which contains 1000 30 second audio clips of songs from the following genres: blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, and rock.
+features_30_sec: a pre-extracted features file of the GTZAN dataset, which contains 1000 30-second audio clips of songs from the following genres: blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, and rock.
 
 #### Features include:
 
