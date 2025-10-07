@@ -1,87 +1,86 @@
+# Music Genre Classification Using GTZAN Dataset
 
-Music Genre Classification Using GTZAN Dataset
+## Overview:
 
-Overview
+This project predicts the genre of a song using precomputed audio features from the GTZAN dataset. It applies machine learning techniques to classify songs into genres and visualize their feature clusters.
 
-This project predicts the genre of a song using precomputed audio features from the GTZAN dataset.
+### Dataset:
 
-It applies machine learning techniques to classify songs into genres and visualize their feature clusters.
+features_30_sec: a pre-extracted features file of the GTZAN dataset, which contains 1000 30 second audio clips of songs from the following genres: blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, and rock.
 
-Dataset
+#### Features include:
 
-File used: features_30_sec.csv
+Chroma, RMS, Spectral centroid, Bandwidth, Rolloff, Zero-crossing rate, Tempo, MFCCs (20 coefficients, mean + variance)
 
-Features include:
+#### Label: 
 
-Chroma, RMS, Spectral centroid, Bandwidth, Rolloff Zero-crossing rate, Tempo MFCCs (20 coefficients, mean + variance)
+label (genre of the song)
 
-Label: label (genre of the song)
+### Project Workflow:
 
-Project Workflow
+1. Data Preprocessing
 
-Data Preprocessing
+- Loaded audio features and genre labels
 
-Loaded audio features and genre labels
+- Split data into training and test sets
 
-Split data into training and test sets
+2. Model Training
 
-Model Training
+- Used a Random Forest Classifier (100 estimators)
 
-Used a Random Forest Classifier (100 estimators)
+3. Evaluation
 
-Evaluation
+- Accuracy score
 
-Accuracy score
+- Classification report (precision, recall, F1-score)
 
-Classification report (precision, recall, F1-score)
+- Confusion matrix heatmap
 
-Confusion matrix heatmap
+4. Enhancements
 
-Enhancements
+- PCA visualization of genre clusters
 
-PCA visualization of genre clusters
+- Similarity-based song recommendations using cosine similarity
 
-Similarity-based song recommendations using cosine similarity
+### Results/Findings
 
-Results/Findings
+- Random Forest achieved high accuracy on test data
 
-Random Forest achieved high accuracy on test data
+- Confusion matrix reveals which genres are most difficult to distinguish
 
-Confusion matrix reveals which genres are most difficult to distinguish
+- PCA visualization shows how genres cluster by audio features
 
-PCA visualization shows how genres cluster by audio features
+### Example Outputs:
 
-Example Outputs
+- Confusion Matrix Heatmap
 
-Confusion Matrix Heatmap
+- PCA plot of genres
 
-PCA plot of genres
+- Most similar songs (recommendation system)
 
-Most similar songs (recommendation system)
+### Future Improvements:
 
-Future Improvements
+- Experiment with different models (SVM, Gradient Boosting, Neural Nets)
 
-Experiment with different models (SVM, Gradient Boosting, Neural Nets)
+- Extend to deep learning (CNN on raw audio spectrograms)
 
-Extend to deep learning (CNN on raw audio spectrograms)
+- Build an interactive recommendation system
 
-Build an interactive recommendation system
+### Technologies Used:
 
-Technologies Used
+- Python (pandas, numpy, scikit-learn, seaborn, matplotlib)
 
-Python (pandas, numpy, scikit-learn, seaborn, matplotlib)
+- Jupyter Notebook
 
-Jupyter Notebook
+### How to Run:
 
-How to Run:
+- Clone/download this repo
 
-Clone/download this repo
+- Place features_30_sec.csv in the data/ folder
 
-Place features_30_sec.csv in the data/ folder
+- Open the Jupyter Notebook
 
-Open the Jupyter Notebook
-
-Run all cells to train the model and view results
+- Run all cells to train the model and view results
 
 Author: Jaidyn Moodley
 
